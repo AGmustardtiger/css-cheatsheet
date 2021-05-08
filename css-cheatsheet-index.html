@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mustard's CSS cheatsheet</title>
+        <link href='css-cheatsheet-style.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+          <h1>CSS SELECTORS CHEATSHEET</h1>
+          <nav id="nav">
+            <ul>
+              <li><a href="#class-id">Class & ID selectors</a></li>
+              <li><a href="#chaining">Grouping & chaining selectors</a></li>
+              <li><a href="#declarations">CSS declarations</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+            <h2 id='class-id'>Class & ID Selectors</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>id selector</td>
+                  <td><code>#id</code></td>
+                </tr>
+                <tr>
+                  <td>class selector</td>
+                  <td><code>.classname</code></td>
+                </tr>
+                <tr>
+                  <td>Selector type</td>
+                  <td><code>h1, h2, p, body etc</code></td>
+                </tr>
+              </tbody>
+            </table>
+            <p>id is more specific than class and class is more specific than type.</p>
+            <h2 id='chaining'>Grouping & chaining selectors</h2>
+            <h3>Grouping selectors</h3>
+            <p>Match multiple selectors to the same CSS rule, using a comma-separated list. In this example, the text for both <code>h1</code> and <code>h2</code> is set to red.</p>
+            <h3>Chaining selectors</h3>
+            <p>Can chain selectors together so that rule sets apply only to elements that match all criteria.</p>
+            <p>e.g. select <code>&lth3&gt</code> elements that also have section-heading class the <code>h3.section-heading</code> selector can be used.</p>
+            <h2 id='declarations'>CSS declarations</h2>
+            <p>In CSS, a declaration is the key-value pair of a CSS property and its value. CSS declarations are used to set style properties and construct rules to apply to individual or groups of elements. The property name and value are separated by a colon, and the entire declaration must be terminated by a semi-colon.</p>
+            <h3>Font size</h3>
+            <p>The <code>font-size</code> CSS property is used to set text sizes. Font size values can be many different units or types such as pixels.</p>
+            <h3>Background colour</h3>
+            <p>The <code>background-color</code> CSS property controls the background colour of elements. Note that it's the US spelling.</p>
+            <h3>Opacity</h3>
+            <p>The <code>opacity</code> CSS property can be used to control the transparency of an element. The value of this property ranges from 0 (transparent) to 1 (opaque).</p>
+            <h3>Font weight</h3>
+            <p>The <code>font-weight</code> CSS property can be used to set the weight (boldness) of text. The provided value can be a keyword such as <code>bold</code> or <code>normal</code>.</p>
+            <h3>Text align</h3>
+            <p>The <code>text-align</code> CSS property can be used to set the text alignment of inline contents. This property can be set to these values: left, right, or center.</p>
+            <h3>Foreground text colour</h3>
+            <p>Using the <code>color</code> property, foreground text color of an element can be set in CSS. The value can be a valid color name supported in CSS like green or blue. Also, 3 digit or 6 digit color code like #22f or #2a2aff can be used to set the color.</p>
+            <h3>Resource URLs</h3>
+            <p>In CSS, the <code>url()</code> function is used to wrap resource URLs. These can be applied to several properties such as the background-image.</p>
+            <h3>Font family</h3>
+            <p>The <code>font-family</code> CSS property is used to specify the typeface in a rule set. Fonts must be available to the browser to display correctly, either on the computer or linked as a web font. If a font value is not available, browsers will display their default font. When using a multi-word font name, it is best practice to wrap them in quotes.</p>
+            <p>You can make use of e.g. Google fonts by adding them into the head html: <code>&ltlink rel="preconnect" href="https://fonts.gstatic.com"&gt</code>
+              <code>&ltlink href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"&gt</code></p>
+            <h3>Background image</h3>
+            <p>The <code>background-image</code> CSS property sets the background image of an element. An image URL should be provided in the syntax <code>url("moon.jpg")</code> as the value of the property.</p>
+          </main>
+          
+          <footer>
+            <p>Contact me at +1 234 567 8910 </p>
+          </footer>
+      </body>
+</html>
